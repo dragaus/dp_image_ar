@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <title>Document</title>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+    <div id="loading" style="z-index: 100;">
+        <p>Loading ...</p>
+    </div>
+    <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+        <a-nft type="nft" url="varo">
+            <a-entity gltf-model="suzane5.gltf" scale="1 1 1" position="0 0 0" rotation="-90 0 0"></a-entity>
+        </a-nft>
+        <a-nft type="nft" url="Meninas">
+            <a-entity gltf-model="suzane5.gltf" scale="1 1 1" position="0 0 0" rotation="90 0 0"></a-entity>
+        </a-nft>
+    </a-scene>
+    <script src="index.js"></script>
+</body>
+</html>

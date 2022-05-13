@@ -14,13 +14,14 @@
         <p>Loading ...</p>
     </div>
     <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-        <a-nft type="nft" url="https://dragaus.github.io/dp_image_ar/varo">
-            <iframe src="https://dragaus.github.io/dp_image_ar/test.mp3"  type="audio/mp3" allow="autoplay" style="display: none;"></iframe>
+        <a-nft type="nft" url="varo">
             <a-entity gltf-model="https://dragaus.github.io/dp_image_ar/suzane5.gltf" scale="1 1 1" position="0 0 0" rotation="-90 0 0"></a-entity>
         </a-nft>
         <a-nft type="nft" url="https://dragaus.github.io/dp_image_ar/Meninas">
             <a-entity gltf-model="https://dragaus.github.io/dp_image_ar/SuzanneAnim.gltf" scale="20 20 20" position="0 0 0" rotation="-90 0 0" animation-mixer></a-entity>
         </a-nft>
+        <a-box color="purple" gps-entity-place="latitude: 19.3076701; longitude: -99.7133682;" position="0 30 0"></a-box>
+        <a-camera gps-camera rotation-reader></a-camera>
     </a-scene>
     <script src="./index.js"></script>
 </body>

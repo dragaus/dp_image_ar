@@ -16,7 +16,7 @@
         <p>Loading ...</p>
     </div>
     <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-        <a-nft type="nft" url="{{varo | absolute_url}}">
+        <a-nft type="nft" url={{"varo" | absolute_url}}>
             <a-entity gltf-model="https://dragaus.github.io/dp_image_ar/suzane5.gltf" scale="1 1 1" position="0 0 0" rotation="-90 0 0"></a-entity>
         </a-nft>
         <a-nft type="nft" url="https://dragaus.github.io/dp_image_ar/Meninas">
